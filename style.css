@@ -48,6 +48,7 @@
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 
@@ -315,4 +316,116 @@
 }
 #upcomming-btn a{
     color: white;
+}
+
+
+/* media querys */
+@media only screen and (max-width: 600px) {
+    .poster-container{
+        background-color: #161616;
+        flex-direction: column;
+        height: 472px;
+        overflow: hidden;
+        width:100%;
+        padding: 8px 12px;
+        gap: 20px;
+        margin: 0%;
+    }
+    .poster-info h1{
+        font-size: 20px;
+    }
+    .poster-info p{
+        font-size: 14px;
+    }
+    .banner-pic {
+       
+        margin-left: 20px;
+        width: 56%;
+        margin-top: auto;
+    
+    }
+    .blog-container {
+        margin-top: 130px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .menu {
+        width: 230px;
+        height: 240px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-bottom: 100px;
+    }
+    .menu-items button {
+
+        text-decoration: none;
+        font-size: 20px;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 210px;
+        height: 48px;
+        border-radius: 5px;
+        border-color: none;
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    
+    }
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15px;
+        margin-right: 5%;
+        column-gap: 3%;
+        overflow: hidden;
+    
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #1E1E1E;
+    }
+    .footer-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:15px;
+        padding-right: 35px;
+        flex-direction: column;
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top:15px;
+        padding-bottom: 15px;
+    }
+    .fotter-title {
+        font-size: 24px;
+        padding-top: 25px;
+    }
+    .footer-contacts li a {
+        font-size: 14px;
+    }
+    .upcoming-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15px;
+        margin-right: 5%;
+        column-gap: 3%;
+    
+    }
 }
